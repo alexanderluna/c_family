@@ -1,0 +1,11 @@
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/bin/Debug/netcoreapp2.2/learning_c_sharp.deps.json
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/bin/Debug/netcoreapp2.2/learning_c_sharp.runtimeconfig.json
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/bin/Debug/netcoreapp2.2/learning_c_sharp.runtimeconfig.dev.json
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/bin/Debug/netcoreapp2.2/learning_c_sharp.dll
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/bin/Debug/netcoreapp2.2/learning_c_sharp.pdb
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.csprojAssemblyReference.cache
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.csproj.CoreCompileInputs.cache
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.AssemblyInfoInputs.cache
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.AssemblyInfo.cs
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.dll
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.pdb
