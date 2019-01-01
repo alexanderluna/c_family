@@ -17,9 +17,6 @@
 - [My Goals with C#](#my-goals-with-c#)
 - [Learning C#](/learning_C#)
 - [Unity](/unity)
-  - [Number Wizard](/unity)
-  - [Roll A Ball](/unity)
-  - [Space Shooter](/unity)
 - [.NET](/dotnet)
 
 ## Why C Sharp
