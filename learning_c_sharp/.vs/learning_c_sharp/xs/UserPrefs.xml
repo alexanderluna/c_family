@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.learning__c__sharp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="learning_c_sharp/Program.cs">
     <Files>
-      <File FileName="learning_c_sharp/Program.cs" Line="14" Column="36" />
-      <File FileName="learning_c_sharp/Arrays.cs" Line="11" Column="10" />
+      <File FileName="learning_c_sharp/Program.cs" Line="42" Column="50" />
+      <File FileName="learning_c_sharp/ObjectsAndMethods.cs" Line="28" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,6 +13,11 @@
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>arrays.names</Value>
         </State>
       </Pad>
     </Pads>
