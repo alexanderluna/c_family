@@ -10,3 +10,4 @@
 - [Roll a Ball (Unity Tutorial)](https://learn.unity.com/project/roll-a-ball-tutorial)
 - [Space Shooter (Unity Tutorial)](https://learn.unity.com/tutorial/introduction-to-space-shooter#5c7f8528edbc2a002053b72a)
 - [Number Wizard (CLI game)](/number-wizard)
+- [RPGStory (UI classic RPG)](/RPGStory)
