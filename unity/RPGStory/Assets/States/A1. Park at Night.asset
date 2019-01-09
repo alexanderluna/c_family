@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
+  m_Name: A1. Park at Night
+  m_EditorClassIdentifier: 
+  storyText: "*pant*, *panth*... My name is John Titor and I'm currently escaping
+    from the World Government. \nI came from the future to your time with a time machine
+    to warn you that a secret organization\nis going to control the power of the space-time
+    continium.\n\nYou have to help me stop CERN from destroying our future.\n\nWhat
+    will you do ?:\n\n1. Believe him and join forces\n2. Distrust and ignore him"
+  nextStates:
+  - {fileID: 11400000, guid: a4b2fc9795cf046ff9f15843d7979e12, type: 2}
+  - {fileID: 11400000, guid: 91694cb2df68e488b96231e115b48827, type: 2}
