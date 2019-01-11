@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
-  m_Name: A3. City in the Morning
+  m_Name: V2. Prof Reich will
   m_EditorClassIdentifier: 
-  storyText: Room 2
-  nextStates:
-  - {fileID: 11400000, guid: ee18cda8dbac24fc69f45ce0924741d7, type: 2}
-  - {fileID: 11400000, guid: a4b2fc9795cf046ff9f15843d7979e12, type: 2}
+  storyText: Prof. Reich loses the research that took his entire life but feels at
+    ease because he knows the future is safeguarded.
+  nextStates: []

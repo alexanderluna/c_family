@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
-  m_Name: A2. Park at Night
+  m_Name: C1. Returning to the park
   m_EditorClassIdentifier: 
-  storyText: '(Park at Night)
+  storyText: '(Returning to the park)
 
 
-    I knew I could count on you... CERN must already know that I''m here. First, we
-    have to find the inventor of the device Prof. Reich. He works at a research laboratory
-    in Zurich.
+    Looks like the news is spreading fast. Unfortunately we lost an entire day. CERN
+    must know I''m here. We have to get in touch with Prof. Reich in Zurich, the inventor
+    of the device.
 
 
-    1. Take your car and drive to Zurich
+    1. Travel to Zurich
 
 
-    2. Wait for CERN to make the first move '
+    2. Call Prof. Reich and tell him to come to your city'
   nextStates:
   - {fileID: 11400000, guid: 3f95b5a5d3c864620814d4d66831ea8c, type: 2}
-  - {fileID: 11400000, guid: 76bb0258d62fb4855bbc8e4ab92260d7, type: 2}
+  - {fileID: 11400000, guid: 6b40db36842044ab89ebe7501cb00ecc, type: 2}

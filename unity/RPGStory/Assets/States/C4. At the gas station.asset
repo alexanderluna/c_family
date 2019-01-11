@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
+  m_Name: C4. At the gas station
+  m_EditorClassIdentifier: 
+  storyText: '(At the Gas station)
+
+
+    Hello Prof. Reich. We need your research on the time machine you are working on.
+    CERN wants the device to form its World Government and control everything. You
+    are being used.
+
+
+    1. Take the research and send John back to the future
+
+
+    2. Take him to a secure place to explain everything'
+  nextStates:
+  - {fileID: 11400000, guid: 1855e0c5b61e248b18d64aa773e9d812, type: 2}
+  - {fileID: 11400000, guid: 7281a40cda3fe4d8892e92bc7248fc22, type: 2}

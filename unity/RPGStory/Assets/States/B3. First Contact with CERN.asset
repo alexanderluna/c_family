@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
+  m_Name: B3. First Contact with CERN
+  m_EditorClassIdentifier: 
+  storyText: "(First Contact with CERN)\n\nWe have new intel on the exact location
+    of CERN's lab. If we storm the lab with our current man power we might be able
+    to free Prof. Reich. \n\n1. Storm CERN's lab\n\n2. Research Reich's lab"
+  nextStates:
+  - {fileID: 11400000, guid: 2a47eef4df05a4579942fe4096cb952c, type: 2}
+  - {fileID: 11400000, guid: 3e6e9cf33cf1d42d1aea30c135d3f32e, type: 2}

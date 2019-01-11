@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
+  m_Name: C3.Driving to the gas station
+  m_EditorClassIdentifier: 
+  storyText: "(Driving to the Gas Station)\n\nProf. Reich didn't know that CERN was
+    just using him. He just wanted to help humanity but in the future he was killed
+    upon finishing the device. Once CERN has the device they will use it to take every
+    position of power and form the World Government just like Big Brother. \n\n1.
+    Continue"
+  nextStates:
+  - {fileID: 11400000, guid: 1bcf61c4bb839421fae1206a5efceec4, type: 2}

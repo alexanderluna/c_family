@@ -10,20 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
-  m_Name: A2. Park at Night
+  m_Name: B2. CERN Strikes
   m_EditorClassIdentifier: 
-  storyText: '(Park at Night)
-
-
-    I knew I could count on you... CERN must already know that I''m here. First, we
-    have to find the inventor of the device Prof. Reich. He works at a research laboratory
-    in Zurich.
-
-
-    1. Take your car and drive to Zurich
-
-
-    2. Wait for CERN to make the first move '
+  storyText: "(CERN strikes)\n\n(next morning): I got a call from my comrades. CERN
+    has kidnapped Prof. Reich. Looks like they got flustered and made a mistake. We
+    were able to find their secret laboratory in Zurich great decision we have to
+    go to Zurich now. \n\n1. Continue"
   nextStates:
   - {fileID: 11400000, guid: 3f95b5a5d3c864620814d4d66831ea8c, type: 2}
-  - {fileID: 11400000, guid: 76bb0258d62fb4855bbc8e4ab92260d7, type: 2}

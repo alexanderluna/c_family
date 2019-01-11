@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
+  m_Name: A3. Next day in the city
+  m_EditorClassIdentifier: 
+  storyText: "(Next day in the city)\n\n(news flash in the city ): CERN has launched
+    a new laboratory to research space and time. The most brilliant minds of the world
+    united at the laboratory for this research which will spend across the next 2
+    decades. \n\n1. Continue"
+  nextStates:
+  - {fileID: 11400000, guid: 271c08c249fe14cdaa39f631e079d069, type: 2}
