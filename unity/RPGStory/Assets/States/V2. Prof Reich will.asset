@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560c395441caa4c3da00fa5f35fe5b17, type: 3}
   m_Name: V2. Prof Reich will
   m_EditorClassIdentifier: 
-  storyText: Prof. Reich loses the research that took his entire life but feels at
+  storyText: 'Prof. Reich loses the research that took his entire life but feels at
     ease because he knows the future is safeguarded.
-  nextStates: []
+
+
+    1. travel to the past'
+  nextStates:
+  - {fileID: 11400000, guid: ee18cda8dbac24fc69f45ce0924741d7, type: 2}

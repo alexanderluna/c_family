@@ -17,5 +17,9 @@ MonoBehaviour:
 
     CERN breaks into your friends house they followed Prof. Reich all the time and
     now they take him with them. You and John die. Prof. Reich is taken to the new
-    lab and world falls under CERN''s power.'
-  nextStates: []
+    lab and world falls under CERN''s power.
+
+
+    1. travel back to the past'
+  nextStates:
+  - {fileID: 11400000, guid: ee18cda8dbac24fc69f45ce0924741d7, type: 2}
