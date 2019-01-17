@@ -33,6 +33,7 @@ namespace learning_c_sharp
             Console.WriteLine("===> Conditionals Start");
             var conditionals = new Conditionals();
             conditionals.IfElseStatement("winter");
+            conditionals.SwitchCaseStatement(5);
             Console.WriteLine("===> Conditionals End\n");
 
 
