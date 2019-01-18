@@ -7,12 +7,11 @@ namespace learning_c_sharp
 
         public Loops()
         {
-            Console.WriteLine("===> Getting the loops ready");
             months = new string[] { "January", "February", "March", "April", "May", "June" };
         }
 
 
-        public void WhileLoop()
+        private void WhileLoop()
         {
             bool looping = true;
             while (looping)
@@ -23,7 +22,7 @@ namespace learning_c_sharp
         }
 
 
-        public void ForLoop()
+        private void ForLoop()
         {
             Console.WriteLine("For loop executing 5 times");
             for (int i = 0; i < 5; i++)
@@ -33,13 +32,20 @@ namespace learning_c_sharp
         }
 
 
-        public void ForEachLoop()
+        private void ForEachLoop()
         {
             Console.WriteLine("ForEach loop executing");
             foreach (var month in months)
             {
                 Console.WriteLine(month);
             }
+        }
+
+        public void ExecuteLoops()
+        {
+            WhileLoop();
+            ForLoop();
+            ForEachLoop();
         }
     }
 }

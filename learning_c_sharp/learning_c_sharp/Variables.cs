@@ -3,10 +3,10 @@ namespace learning_c_sharp
 {
     public class Variables
     {
-        public char initial;
-        public string lastName;
-        public int year;
-        public Boolean summer;
+        private char initial;
+        private string lastName;
+        private int year;
+        private Boolean summer;
 
         public Variables()
         {
@@ -14,6 +14,14 @@ namespace learning_c_sharp
             lastName = "Luna";
             year = 2019;
             summer = true;
+        }
+
+        public void PrintVariables()
+        {
+            Console.WriteLine("Character: {0}", initial);
+            Console.WriteLine("String: {0}", lastName);
+            Console.WriteLine("Int: {0}", year);
+            Console.WriteLine("Boolean: {0}", summer);
         }
     }
 }

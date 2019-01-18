@@ -21,7 +21,7 @@ namespace learning_c_sharp
         }
 
 
-        public void IfElseStatement(string season)
+        private void IfElseStatement(string season)
         {
             Console.WriteLine("Is it Summer ?");
             if (season == "winter")
@@ -34,7 +34,7 @@ namespace learning_c_sharp
         }
 
 
-        public void SwitchCaseStatement(int dayOfWeek)
+        private void SwitchCaseStatement(int dayOfWeek)
         {
             switch ((Week) dayOfWeek)
             {
@@ -63,6 +63,13 @@ namespace learning_c_sharp
                     Console.WriteLine("I don't know that day");
                     break;
             }
+        }
+
+
+        public void ExecuteConditionals()
+        {
+            IfElseStatement("winter");
+            SwitchCaseStatement(5);
         }
     }
 }
