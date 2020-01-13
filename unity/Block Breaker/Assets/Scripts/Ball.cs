@@ -1,21 +1,47 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
     [SerializeField] Paddle paddle;
+    [SerializeField] float velocityX = 2f;
+    [SerializeField] float velocityY = 20f;
 
-    Vector2 paddleToBallVector;
+    private Vector2 paddleToBallVector;
+    private bool hasStarted = false;
 
 
-    void Start()
+    private void Start()
     {
         paddleToBallVector = transform.position - paddle.transform.position;
     }
 
 
-    void Update()
+    private void Update()
+    {
+        if (!hasStarted) {
+            LockBallToPaddle();
+            LaunchOnMouseClick();
+        }
+    }
+
+
+    private void LaunchOnMouseClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(
+                velocityX,
+                velocityY
+            );
+            hasStarted = true;
+        }
+    }
+
+
+    private void LockBallToPaddle()
     {
         Vector2 paddlePosition = new Vector2(
             paddle.transform.position.x,
