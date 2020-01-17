@@ -11,11 +11,15 @@ public class Ball : MonoBehaviour
 
     private Vector2 paddleToBallVector;
     private bool hasStarted = false;
+    private Rigidbody2D rigidBody;
+    private AudioSource audioSource;
 
 
     private void Start()
     {
         paddleToBallVector = transform.position - paddle.transform.position;
+        rigidBody = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -32,7 +36,7 @@ public class Ball : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(
+            rigidBody.velocity = new Vector2(
                 velocityX,
                 velocityY
             );
@@ -47,7 +51,15 @@ public class Ball : MonoBehaviour
             paddle.transform.position.x,
             paddle.transform.position.y
         );
-
         transform.position = paddlePosition + paddleToBallVector;
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (hasStarted)
+        {
+            audioSource.Play();
+        }
     }
 }
