@@ -17,5 +17,9 @@ public class Level : MonoBehaviour
     public void RemoveBlock()
     {
         blocks--;
+        if (blocks <= 0)
+        {
+            FindObjectOfType<SceneLoader>().LoadNextScene();
+        }
     }
 }
