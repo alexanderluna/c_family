@@ -1,24 +1,18 @@
 ﻿<Properties StartupConfiguration="{5C6FCE2D-B69C-41FD-87F2-1537458ABD89}|Default">
   <MonoDevelop.Ide.ItemProperties.learning__c__sharp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="learning_c_sharp/Loops.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="learning_c_sharp/Variables.cs">
     <Files>
-      <File FileName="learning_c_sharp/Program.cs" Line="41" Column="1" />
-      <File FileName="learning_c_sharp/ObjectsAndMethods.cs" Line="43" Column="40" />
-      <File FileName="learning_c_sharp/Loops.cs" Line="15" Column="10" />
+      <File FileName="learning_c_sharp/Program.cs" Line="76" Column="14" />
+      <File FileName="learning_c_sharp/Variables.cs" Line="6" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="learning_c_sharp" expanded="True">
             <Node name="learning_c_sharp" expanded="True">
-              <Node name="Loops.cs" selected="True" />
+              <Node name="Variables.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>arrays.names</Value>
         </State>
       </Pad>
     </Pads>

@@ -9,3 +9,4 @@
 /Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.AssemblyInfo.cs
 /Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.dll
 /Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.pdb
+/Users/alexander/Desktop/csharp/learning_c_sharp/learning_c_sharp/obj/Debug/netcoreapp2.2/learning_c_sharp.genruntimeconfig.cache
