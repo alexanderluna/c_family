@@ -1,35 +1,79 @@
 ﻿using System;
 
-namespace learning_c_sharp {
-
+namespace learning_c_sharp
+{
     class Program {
+        static bool isRunning = true;
+
 
         static void Main (string[] args) {
-            Console.WriteLine ("===> Variables Start");
-            var variable = new Variables ();
-            variable.PrintVariables ();
-            Console.WriteLine ("===> Variables End\n");
+            while(isRunning)
+            {
+                DisplayUserOptions();
+                int userInput = GetUserInput();
+                ParseUserInput(userInput);
 
-            Console.WriteLine ("===> Arrays Start");
-            var arrays = new Arrays ();
-            arrays.PrintArrays ()
-            Console.WriteLine ("===> Arrays End\n");
+                Console.WriteLine("\n\nPress (Enter) to confirm");
+                Console.ReadLine();
+                Console.Clear();
+            }
+        }
 
-            Console.WriteLine ("===> Loops Start");
-            var loops = new Loops ();
-            loops.ExecuteLoops ();
-            Console.WriteLine ("===> Loops End\n");
 
-            Console.WriteLine ("===> Conditionals Start");
-            var conditionals = new Conditionals ();
-            conditionals.ExecuteConditionals ();
-            Console.WriteLine ("===> Conditionals End\n");
+        static void DisplayUserOptions()
+        {
+            Console.WriteLine(
+                "Choose an option and press (Enter): " +
+                "\n\t1. Quit" +
+                "\n\t2. Variables" +
+                "\n\t3. Arrays" +
+                "\n\t4. Loops" +
+                "\n\t5. Conditionals" +
+                "\n\t6. Object and Methods"
+            );
+        }
 
-            Console.WriteLine ("===> Objects and Methods Start");
-            var objectsAndMethods = new ObjectsAndMethods ();
-            objectsAndMethods.ExecuteMethods ();
-            ObjectsAndMethods.NoInstanceNeeded ();
-            Console.WriteLine ("===> Objects and Methods End\n");
+
+        static int GetUserInput()
+        {
+            try
+            {
+                return int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+
+
+        static void ParseUserInput(int userInput)
+        {
+            switch (userInput)
+            {
+                case (int)Options.Quit:
+                    isRunning = false;
+                    break;
+                case (int)Options.Variables:
+                    _ = new Variables();
+                    break;
+                case (int)Options.Arrays:
+                    _ = new Arrays();
+                    break;
+                case (int)Options.Loops:
+                    _ = new Loops();
+                    break;
+                case (int)Options.Conditionals:
+                    _ = new Conditionals();
+                    break;
+                case (int)Options.ObjectAndMethods:
+                    _ = new ObjectsAndMethods();
+                    ObjectsAndMethods.NoInstanceNeeded();
+                    break;
+                default:
+                    Console.WriteLine("Invalid option...");
+                    break;
+            }
         }
     }
 }
