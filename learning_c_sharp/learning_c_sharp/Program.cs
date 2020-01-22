@@ -29,7 +29,8 @@ namespace learning_c_sharp
                 "\n\t3. Arrays" +
                 "\n\t4. Loops" +
                 "\n\t5. Conditionals" +
-                "\n\t6. Object and Methods"
+                "\n\t6. Object and Methods" +
+                "\n\t7. Dates"
             );
         }
 
@@ -69,6 +70,9 @@ namespace learning_c_sharp
                 case (int)Options.ObjectAndMethods:
                     _ = new ObjectsAndMethods();
                     ObjectsAndMethods.NoInstanceNeeded();
+                    break;
+                case (int)Options.Dates:
+                    _ = new Dates();
                     break;
                 default:
                     Console.WriteLine("Invalid option...");

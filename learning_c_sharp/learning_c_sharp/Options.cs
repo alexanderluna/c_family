@@ -7,6 +7,7 @@
         Arrays = 3,
         Loops = 4,
         Conditionals = 5,
-        ObjectAndMethods = 6
+        ObjectAndMethods = 6,
+        Dates = 7
     }
 }
