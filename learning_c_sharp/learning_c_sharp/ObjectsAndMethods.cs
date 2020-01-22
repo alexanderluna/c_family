@@ -3,8 +3,6 @@ namespace learning_c_sharp
 {
     public class ObjectsAndMethods
     {
-
-
         public ObjectsAndMethods()
         {
             Console.WriteLine("===> Setting up Objects and methods");

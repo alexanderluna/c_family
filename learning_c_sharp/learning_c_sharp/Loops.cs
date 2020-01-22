@@ -7,7 +7,21 @@ namespace learning_c_sharp
 
         public Loops()
         {
-            months = new string[] { "January", "February", "March", "April", "May", "June" };
+            Console.WriteLine("===> Setting up Arrays");
+            months = new string[] {
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            };
         }
 
 
@@ -16,7 +30,7 @@ namespace learning_c_sharp
             bool looping = true;
             while (looping)
             {
-                Console.WriteLine("While loop executing");
+                Console.WriteLine("While loop executing once");
                 looping = false;
             }
         }
@@ -34,7 +48,7 @@ namespace learning_c_sharp
 
         private void ForEachLoop()
         {
-            Console.WriteLine("ForEach loop executing");
+            Console.WriteLine("ForEach loop executing for Month in the Year");
             foreach (var month in months)
             {
                 Console.WriteLine(month);

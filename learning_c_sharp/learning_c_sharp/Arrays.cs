@@ -3,17 +3,22 @@ namespace learning_c_sharp
 {
     public class Arrays
     {
-        private string[] names;
+        private readonly string[] names = new string[3] {
+            "Alexander",
+            "John",
+            "Bob"
+        };
 
         public Arrays()
         {
-            names = new string[3] { "Alexander", "John", "Bob" };
+            Console.WriteLine("===> Setting up Arrays");
+            PrintArrays();
         }
 
-        public void PrintArrays()
+        private void PrintArrays()
         {
             Console.WriteLine("Arrays has {0} items", names.Length);
-            Console.WriteLine(string.Join(',', names));
+            Console.WriteLine(string.Join(", ", names));
         }
     }
 }

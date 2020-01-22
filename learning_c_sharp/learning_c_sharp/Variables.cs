@@ -3,20 +3,20 @@ namespace learning_c_sharp
 {
     public class Variables
     {
-        private char initial;
-        private string lastName;
-        private int year;
-        private Boolean summer;
+        private readonly char initial = 'A';
+        private readonly string lastName = "Luna";
+        private readonly int year = 2020;
+        private readonly bool summer = true;
+
 
         public Variables()
         {
-            initial = 'A';
-            lastName = "Luna";
-            year = 2019;
-            summer = true;
+            Console.WriteLine("===> Setting up Variables");
+            PrintVariables();
         }
 
-        public void PrintVariables()
+
+        private void PrintVariables()
         {
             Console.WriteLine("Character: {0}", initial);
             Console.WriteLine("String: {0}", lastName);
