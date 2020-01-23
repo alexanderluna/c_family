@@ -1,7 +1,7 @@
 ﻿using System;
+
 namespace learning_c_sharp
 {
-
     public class Conditionals
     {
         private enum Week
@@ -15,9 +15,11 @@ namespace learning_c_sharp
             Sunday = 7
         }
 
+
         public Conditionals()
         {
             Console.WriteLine("===> Conditions getting configured");
+            ExecuteConditionals();
         }
 
 
@@ -66,7 +68,7 @@ namespace learning_c_sharp
         }
 
 
-        public void ExecuteConditionals()
+        private void ExecuteConditionals()
         {
             IfElseStatement("winter");
             SwitchCaseStatement(5);

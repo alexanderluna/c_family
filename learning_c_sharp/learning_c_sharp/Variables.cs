@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace learning_c_sharp
 {
     public class Variables
