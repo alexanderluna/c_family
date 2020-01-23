@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace learning_c_sharp
 {
@@ -10,8 +11,8 @@ namespace learning_c_sharp
             while(isRunning)
             {
                 DisplayUserOptions();
-                int userInput = GetUserInput();
-                ParseUserInput(userInput);
+                int userChoice = GetUserInput();
+                ParseUserInput(userChoice);
 
                 Console.WriteLine("\n\nPress (Enter) to confirm");
                 Console.ReadLine();
@@ -22,16 +23,18 @@ namespace learning_c_sharp
 
         static void DisplayUserOptions()
         {
-            Console.WriteLine(
-                "Choose an option and press (Enter): " +
-                "\n\t1. Quit" +
-                "\n\t2. Variables" +
-                "\n\t3. Arrays" +
-                "\n\t4. Loops" +
-                "\n\t5. Conditionals" +
-                "\n\t6. Object and Methods" +
-                "\n\t7. Dates"
-            );
+            var displayText = new StringBuilder();
+            displayText
+                .AppendLine("Choose an option and press (Enter): ")
+                .AppendLine("\t0. Quit")
+                .AppendLine("\t1. Variables")
+                .AppendLine("\t2. Arrays")
+                .AppendLine("\t3. Loops")
+                .AppendLine("\t4. Conditionals")
+                .AppendLine("\t5. Object and Methods")
+                .AppendLine("\t6. Dates");
+
+            Console.WriteLine(displayText);
         }
 
 
@@ -43,7 +46,7 @@ namespace learning_c_sharp
             }
             catch (Exception)
             {
-                return 0;
+                return -1;
             }
         }
 

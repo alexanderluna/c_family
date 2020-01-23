@@ -2,12 +2,12 @@
 {
     public enum Options : byte
     {
-        Quit = 1,
-        Variables = 2,
-        Arrays = 3,
-        Loops = 4,
-        Conditionals = 5,
-        ObjectAndMethods = 6,
-        Dates = 7
+        Quit = 0,
+        Variables = 1,
+        Arrays = 2,
+        Loops = 3,
+        Conditionals = 4,
+        ObjectAndMethods = 5,
+        Dates = 6
     }
 }
