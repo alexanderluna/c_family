@@ -32,7 +32,8 @@ namespace learning_c_sharp
                 .AppendLine("\t3. Loops")
                 .AppendLine("\t4. Conditionals")
                 .AppendLine("\t5. Object and Methods")
-                .AppendLine("\t6. Dates");
+                .AppendLine("\t6. Dates")
+                .AppendLine("\t7. Files");
 
             Console.WriteLine(displayText);
         }
@@ -76,6 +77,9 @@ namespace learning_c_sharp
                     break;
                 case (int)Options.Dates:
                     _ = new Dates();
+                    break;
+                case (int)Options.Files:
+                    _ = new Files();
                     break;
                 default:
                     Console.WriteLine("Invalid option...");

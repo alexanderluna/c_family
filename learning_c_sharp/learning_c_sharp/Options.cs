@@ -8,6 +8,7 @@
         Loops = 3,
         Conditionals = 4,
         ObjectAndMethods = 5,
-        Dates = 6
+        Dates = 6,
+        Files = 7
     }
 }
