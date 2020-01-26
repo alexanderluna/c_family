@@ -33,7 +33,8 @@ namespace learning_c_sharp
                 .AppendLine("\t4. Conditionals")
                 .AppendLine("\t5. Object and Methods")
                 .AppendLine("\t6. Dates")
-                .AppendLine("\t7. Files");
+                .AppendLine("\t7. Files")
+                .AppendLine("\t8. Getter and Setter");
 
             Console.WriteLine(displayText);
         }
@@ -80,6 +81,10 @@ namespace learning_c_sharp
                     break;
                 case (int)Options.Files:
                     _ = new Files();
+                    break;
+                case (int)Options.GetterSetter:
+                    var GetterSetter = new GetterSetter(new DateTime(1991, 5, 4));
+                    _ = GetterSetter.Age;
                     break;
                 default:
                     Console.WriteLine("Invalid option...");

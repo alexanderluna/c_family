@@ -27,6 +27,17 @@ provide functionality. As the number of classes increases, Namespaces organize
 classes into groups. In turn, Assembly (DLL, EXE) organize Namespaces. Finally
 the Application build one or more Assemblies
 
+## Code Examples
+
+1. [Variables](learning_c_sharp/01_Variables.cs)
+2. [Arrays](learning_c_sharp/02_Arrays.cs)
+3. [Loops](learning_c_sharp/03_Loops.cs)
+4. [Conditionals](learning_c_sharp/04_Conditionals.cs)
+5. [Objects and Methods](learning_c_sharp/05_ObjectsAndMethods.cs)
+6. [Dates](learning_c_sharp/Dates.cs)
+7. [Files](learning_c_sharp/Files.cs)
+8. [Getter and Setters](learning_c_sharp/GetterSetter.cs)
+
 ## Resources
 
 - [(Udemy) C# Basics for Beginners](https://www.udemy.com/csharp-tutorial-for-beginners/)

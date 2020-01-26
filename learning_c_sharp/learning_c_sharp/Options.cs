@@ -9,6 +9,7 @@
         Conditionals = 4,
         ObjectAndMethods = 5,
         Dates = 6,
-        Files = 7
+        Files = 7,
+        GetterSetter = 8
     }
 }
