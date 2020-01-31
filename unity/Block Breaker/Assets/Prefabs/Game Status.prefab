@@ -43,4 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac02565a4fc6145f6811e713d5db3f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSpeed: 0.1
+  gameSpeed: 1
+  scoreText: {fileID: 0}
+  pointsPerBlockDestroyed: 64
+  currentScore: 0
