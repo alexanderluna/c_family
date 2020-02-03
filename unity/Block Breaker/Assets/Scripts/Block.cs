@@ -5,14 +5,15 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip breakSound;
+    [SerializeField] GameObject sparklesVFX;
 
     private Level level;
-    private GameSession gameStatus;
+    private GameSession gameSession;
 
 
     private void Start()
     {
-        gameStatus = FindObjectOfType<GameSession>();
+        gameSession = FindObjectOfType<GameSession>();
         level = FindObjectOfType<Level>();
         level.AddBlock();
     }
@@ -26,12 +27,30 @@ public class Block : MonoBehaviour
 
     private void DestroyBlock()
     {
+        PlaySFX();
+        Destroy(gameObject);
+        TriggerSparklesVFX();
+        level.RemoveBlock();
+        gameSession.AddScore();
+    }
+
+
+    private void PlaySFX()
+    {
         AudioSource.PlayClipAtPoint(
             breakSound,
             Camera.main.transform.position
         );
-        Destroy(gameObject);
-        level.RemoveBlock();
-        gameStatus.AddScore();
+    }
+
+
+    private void TriggerSparklesVFX()
+    {
+        GameObject sparkles = Instantiate(
+            sparklesVFX,
+            transform.position,
+            transform.rotation
+        );
+        Destroy(sparkles, 1f);
     }
 }
