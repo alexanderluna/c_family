@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+struct BlockTag
+{
+    public const string Breakable = "Breakable";
+    public const string Unbreakable = "Unbreakable";
+}
+
+
 public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip breakSound;
@@ -14,14 +22,22 @@ public class Block : MonoBehaviour
     private void Start()
     {
         gameSession = FindObjectOfType<GameSession>();
-        level = FindObjectOfType<Level>();
-        level.AddBlock();
+        CountBreakableBlocks();
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+        if (CompareTag(BlockTag.Breakable))
+            DestroyBlock();
+    }
+
+
+    private void CountBreakableBlocks()
+    {
+        level = FindObjectOfType<Level>();
+        if (CompareTag(BlockTag.Breakable))
+            level.AddBlock();
     }
 
 
