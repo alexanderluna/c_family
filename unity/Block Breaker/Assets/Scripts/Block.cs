@@ -14,6 +14,8 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip breakSound;
     [SerializeField] GameObject sparklesVFX;
+    [SerializeField] int maxHits;
+    [SerializeField] int timesHit;
 
     private Level level;
     private GameSession gameSession;
@@ -29,15 +31,15 @@ public class Block : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (CompareTag(BlockTag.Breakable))
-            DestroyBlock();
+            HandleHit();
     }
 
 
-    private void CountBreakableBlocks()
+    private void HandleHit()
     {
-        level = FindObjectOfType<Level>();
-        if (CompareTag(BlockTag.Breakable))
-            level.AddBlock();
+        timesHit++;
+        if (timesHit >= maxHits)
+            DestroyBlock();
     }
 
 
@@ -68,5 +70,13 @@ public class Block : MonoBehaviour
             transform.rotation
         );
         Destroy(sparkles, 1f);
+    }
+
+
+    private void CountBreakableBlocks()
+    {
+        level = FindObjectOfType<Level>();
+        if (CompareTag(BlockTag.Breakable))
+            level.AddBlock();
     }
 }
