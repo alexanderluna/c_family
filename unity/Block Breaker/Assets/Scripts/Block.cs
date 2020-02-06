@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,16 +15,19 @@ public class Block : MonoBehaviour
 {
     [SerializeField] AudioClip breakSound;
     [SerializeField] GameObject sparklesVFX;
+    [SerializeField] Sprite[] hitSprites;
     [SerializeField] int maxHits;
     [SerializeField] int timesHit;
 
     private Level level;
     private GameSession gameSession;
+    private SpriteRenderer spriteRenderer;
 
 
     private void Start()
     {
         gameSession = FindObjectOfType<GameSession>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         CountBreakableBlocks();
     }
 
@@ -40,6 +44,15 @@ public class Block : MonoBehaviour
         timesHit++;
         if (timesHit >= maxHits)
             DestroyBlock();
+        else
+            ShowNextSprite();
+    }
+
+
+    private void ShowNextSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        spriteRenderer.sprite = hitSprites[spriteIndex];
     }
 
 
