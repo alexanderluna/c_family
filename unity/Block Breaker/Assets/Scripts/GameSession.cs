@@ -9,6 +9,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int pointsPerBlockDestroyed = 64;
     [SerializeField] int currentScore = 0;
+    [SerializeField] bool autoPlayIsEnabled = false;
 
 
     private void Awake()
@@ -48,5 +49,11 @@ public class GameSession : MonoBehaviour
     {
         currentScore += pointsPerBlockDestroyed;
         scoreText.text = currentScore.ToString();
+    }
+
+
+    public bool AutoPlayIsEnabled()
+    {
+        return autoPlayIsEnabled;
     }
 }
