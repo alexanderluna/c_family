@@ -14,7 +14,7 @@ namespace learning_c_sharp
                 int userChoice = GetUserInput();
                 ParseUserInput(userChoice);
 
-                Console.WriteLine("\n\nPress (Enter) to confirm");
+                Console.WriteLine("\n\nPress (Enter)");
                 Console.ReadLine();
                 Console.Clear();
             }
@@ -23,18 +23,18 @@ namespace learning_c_sharp
 
         static void DisplayUserOptions()
         {
-            var displayText = new StringBuilder();
+            StringBuilder displayText = new StringBuilder();
             displayText
                 .AppendLine("Choose an option and press (Enter): ")
-                .AppendLine("\t0. Quit")
-                .AppendLine("\t1. Variables")
-                .AppendLine("\t2. Arrays")
-                .AppendLine("\t3. Loops")
-                .AppendLine("\t4. Conditionals")
-                .AppendLine("\t5. Object and Methods")
-                .AppendLine("\t6. Dates")
-                .AppendLine("\t7. Files")
-                .AppendLine("\t8. Getter and Setter");
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Quit, Options.Quit.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Variables, Options.Variables.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Arrays, Options.Arrays.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Loops, Options.Conditionals.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Conditionals, Options.Conditionals.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.ObjectAndMethods, Options.ObjectAndMethods.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Dates, Options.Dates.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Files, Options.Files.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.GetterSetter, Options.GetterSetter.ToString());
 
             Console.WriteLine(displayText);
         }
