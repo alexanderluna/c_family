@@ -34,7 +34,8 @@ namespace learning_c_sharp
                 .AppendFormat("\t{0}. {1}\n", (int)Options.ObjectAndMethods, Options.ObjectAndMethods.ToString())
                 .AppendFormat("\t{0}. {1}\n", (int)Options.Dates, Options.Dates.ToString())
                 .AppendFormat("\t{0}. {1}\n", (int)Options.Files, Options.Files.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.GetterSetter, Options.GetterSetter.ToString());
+                .AppendFormat("\t{0}. {1}\n", (int)Options.GetterSetter, Options.GetterSetter.ToString())
+                .AppendFormat("\t{0}. {1}\n", (int)Options.Inheritance, Options.Inheritance.ToString());
 
             Console.WriteLine(displayText);
         }
@@ -85,6 +86,9 @@ namespace learning_c_sharp
                 case (int)Options.GetterSetter:
                     var GetterSetter = new GetterSetter(new DateTime(1991, 5, 4));
                     _ = GetterSetter.Age;
+                    break;
+                case (int)Options.Inheritance:
+                    var Inheritance = new Cat("brown", 23.5, 4);
                     break;
                 default:
                     Console.WriteLine("Invalid option...");

@@ -10,6 +10,7 @@
         ObjectAndMethods,
         Dates,
         Files,
-        GetterSetter
+        GetterSetter,
+        Inheritance,
     }
 }
