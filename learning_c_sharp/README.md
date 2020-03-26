@@ -27,6 +27,29 @@ provide functionality. As the number of classes increases, Namespaces organize
 classes into groups. In turn, Assembly (DLL, EXE) organize Namespaces. Finally
 the Application build one or more Assemblies
 
+## Composition or Inheritance ?
+
+In Object Oriented Programming, Inheritance is used commonly to reuse and
+organize code. However, we can also use Composition for that. Composition
+means that instead of tighly coupling two classes, we pass the class we want to
+inherit from in the constructor and assign it to a private field.
+
+For example, we can create a Logger class with logging functionality and an
+Installer class. Instead of making the Installer class inherit from the Logger
+class we can pass the Logger class in the Installer's constructor and set it to
+a private field inside. The Installer has access to all of the Logger class's
+functionality without inheriting from it.
+
+So why avoid inheritance ? Inheritance can create large hierarchies which makes
+it difficult to change anything resulting in fragile code. The result can be
+tightly coupled code.
+
+> Inheritance refers to a **Is-a** relationship while Composition refers to a
+> **Has-a** relationship.
+
+Finally, it does make sense to use Inheritance but we can leverage a lot of
+functionality through Composition rather than introduction large hierarchies.
+
 ## Code Examples
 
 1. [Variables](learning_c_sharp/01_Variables.cs)
