@@ -6,6 +6,12 @@ namespace learning_c_sharp
         protected string Color { get; set; }
         protected double Size { get; set; }
 
+        public Animal(string color, double size)
+        {
+            this.Color = color;
+            this.Size = size;
+        }
+
         protected void Sound()
         {
             Console.WriteLine("Rawrr I am an animal");
@@ -23,10 +29,9 @@ namespace learning_c_sharp
         private int Legs { get; set; }
 
         public Cat(string color, double size, int legs)
+            : base(color, size)
         {
-            this.Color = color;
             this.FurColor = color;
-            this.Size = size;
             this.Legs = legs;
 
             this.Sound();
