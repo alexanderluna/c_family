@@ -3,15 +3,15 @@ namespace learning_c_sharp
 {
     public class Animal
     {
-        public string color { get; set; }
-        public double size { get; set; }
+        protected string Color { get; set; }
+        protected double Size { get; set; }
 
-        public void sound()
+        protected void Sound()
         {
             Console.WriteLine("Rawrr I am an animal");
         }
 
-        public void eat()
+        protected void Eat()
         {
             Console.WriteLine("I am eating happily");
         }
@@ -19,22 +19,22 @@ namespace learning_c_sharp
 
     public class Cat: Animal
     {
-        public string furColor { get; set; }
-        public int legs { get; set; }
+        private string FurColor { get; set; }
+        private int Legs { get; set; }
 
         public Cat(string color, double size, int legs)
         {
-            this.color = color;
-            this.furColor = color;
-            this.size = size;
-            this.legs = legs;
+            this.Color = color;
+            this.FurColor = color;
+            this.Size = size;
+            this.Legs = legs;
 
-            this.sound();
+            this.Sound();
             Console.WriteLine(
                 "I am a {0} cat with {1} legs and I am {2} cm tall",
-                this.color,
-                this.legs,
-                this.size
+                this.Color,
+                this.Legs,
+                this.Size
             );
         }
     }
