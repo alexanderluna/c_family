@@ -7,21 +7,14 @@ namespace learning_c_sharp
     {
         public static void DisplayUserOptions()
         {
-            StringBuilder displayText = new StringBuilder();
-            displayText
-                .AppendLine("Choose an option and press (Enter): ")
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Quit, Options.Quit.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Variables, Options.Variables.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Arrays, Options.Arrays.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Loops, Options.Conditionals.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Conditionals, Options.Conditionals.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.ObjectAndMethods, Options.ObjectAndMethods.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Dates, Options.Dates.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Files, Options.Files.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.GetterSetter, Options.GetterSetter.ToString())
-                .AppendFormat("\t{0}. {1}\n", (int)Options.Inheritance, Options.Inheritance.ToString());
-
-            Console.WriteLine(displayText);
+            foreach (int index in Enum.GetValues(typeof(Options)))
+            {
+                Console.WriteLine(
+                    "\t{0}.\t {1}",
+                    index,
+                    Enum.GetName(typeof(Options), index)
+                );
+            }
         }
 
 
