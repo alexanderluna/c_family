@@ -1,6 +1,6 @@
 ﻿namespace learning_c_sharp
 {
-    public enum Options : byte
+    public enum Options
     {
         Quit,
         Variables,
@@ -12,5 +12,6 @@
         Files,
         GetterSetter,
         Inheritance,
+        Interfaces,
     }
 }

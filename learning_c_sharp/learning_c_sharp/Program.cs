@@ -53,6 +53,13 @@ namespace learning_c_sharp
                 case (int)Options.Inheritance:
                     var Inheritance = new Cat("brown", 23.5, 4);
                     break;
+                case (int)Options.Interfaces:
+                    var PlainInstaller = new Installer(new Logger());
+                    var FileInstaller = new Installer(new FileLogger());
+                    PlainInstaller.Run();
+                    PlainInstaller.Error();
+                    FileInstaller.Run();
+                    break;
                 default:
                     Console.WriteLine("Invalid option...");
                     break;
