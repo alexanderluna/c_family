@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6156987600477302713}
   - component: {fileID: 6156987600477302712}
   m_Layer: 0
-  m_Name: block
-  m_TagString: Untagged
+  m_Name: Breakable Block 3 Hit
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 72ab7d7fffa7e43ba9be76b378ff029a, type: 3}
-  m_Color: {r: 1, g: 0.47946078, b: 0, a: 1}
+  m_Color: {r: 0.8803495, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -120,3 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSound: {fileID: 8300000, guid: c3042fb69893f4c09a5bf74cd81026cc, type: 3}
+  sparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  hitSprites:
+  - {fileID: 21300000, guid: f024a9b4d18894202a61b19c43af8ef0, type: 3}
+  - {fileID: 21300000, guid: 8866dc71d184440fea848ae2a137b7db, type: 3}
+  maxHits: 3
+  timesHit: 0
