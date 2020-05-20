@@ -39,4 +39,11 @@ public class CameraMovement : MonoBehaviour
             );
         }
     }
+
+
+    public void ChangePosition(Vector2 minChange, Vector2 maxChange)
+    {
+        minPosition += minChange;
+        maxPosition += maxChange;
+    }
 }
