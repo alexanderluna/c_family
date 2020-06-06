@@ -32,7 +32,7 @@ namespace Commander
                 opt.UseNpgsql(DotNetEnv.Env.GetString("DATABASE_URL"));
             });
             services.AddControllers();
-            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+            services.AddScoped<ICommanderRepo, PgCommanderRepo>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
