@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace Commander
 {
@@ -32,6 +33,7 @@ namespace Commander
                 opt.UseNpgsql(DotNetEnv.Env.GetString("DATABASE_URL"));
             });
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<ICommanderRepo, PgCommanderRepo>();
         }
 
