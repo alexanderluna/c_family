@@ -62,7 +62,8 @@ Mobile, Desktop and Game development.
 In order to learn C/C++/C# you will need an IDE like VSC, Code::Blocks or
 Eclipse. For C/C++ you will also need a compiler like `gcc` or `clang`.
 Microsoft has really good extensions for IntelliSense, debugging, and code
-browsing which you can install in VSC.
+browsing which you can install in VSC or if you like a simpler approach use
+the clangd extension.
 
 ```sh
 # on Linux you can install both compiler like this
