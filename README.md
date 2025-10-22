@@ -23,6 +23,7 @@ ecosystem, focusing on productivity and safety.
   - [C# command line interface apps](./c#_cli/)
   - [C# unity](./unity/)
   - [C# .net](./dotnet/)
+  ---
 - [Learning C Family](#learning-c-family)
   - [Learning C](./learning_c/)
   - [Learning C++](./learning_c++/)
@@ -90,24 +91,25 @@ brew install dotnet
 
 ## Resources
 
-- [Effective C, 2nd Edition]()
-- [C Brain Teasers]()
-- [Tiny C Projects]()
-- [Bare Metal C]()
-- [Modern C]()
+- ★★★★★ [Head First C](https://search.worldcat.org/title/745978740)
+- ★★★★☆ [C Brain Teasers](https://search.worldcat.org/title/1425941821)
+- [Effective C, 2nd Edition](https://search.worldcat.org/title/1456120295)
+- [Tiny C Projects](https://search.worldcat.org/title/1356977440)
+- [Bare Metal C](https://search.worldcat.org/title/1285369532)
+- [Modern C](https://search.worldcat.org/title/1543144954)
 
 ---
 
-- [A Tour of C++]()
-- [Learn C++ by Example]()
-- [C++ Brain Teasers]()
-- [100 C++ Mistakes and How to Avoid Them]()
-- [Modern C++ Programming with Test-Driven Development]()
-- [C++ Concurrency in Action]()
+- ★★★★★ [A Tour of C++](https://search.worldcat.org/title/1344337270)
+- [Learn C++ by Example](https://search.worldcat.org/title/1425946159)
+- [C++ Brain Teasers](https://search.worldcat.org/title/1456141198)
+- [100 C++ Mistakes and How to Avoid Them](https://search.worldcat.org/title/1493579721)
+- [Modern C++ Programming with Test-Driven Development](https://search.worldcat.org/title/893436780)
+- [C++ Concurrency in Action](https://search.worldcat.org/title/1096283026)
 
 ---
 
-- [C# Brain Teasers]()
-- [C# in Depth, 4th Edition]()
-- [Code like a Pro in C#]()
-- [Gray hat C#]()
+- [C# Brain Teasers](https://search.worldcat.org/title/1526838852)
+- [C# in Depth, 4th Edition](https://search.worldcat.org/title/1220984348)
+- [Code like a Pro in C#](https://search.worldcat.org/title/1269347368)
+- [Gray hat C#](https://search.worldcat.org/title/971333823)
