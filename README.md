@@ -15,19 +15,19 @@ ecosystem, focusing on productivity and safety.
   - [C algorithms](./c_algorithms/)
   - [C command line interface apps](./c_cli/)
   ---
-  - [C++ algorithms](./c++_algorithms/)
-  - [C++ command line interface apps](./c++_cli/)
-  - [C++ unreal engine](./c++_unreal_engine/)
+  - [C++ algorithms](./cpp_algorithms/)
+  - [C++ command line interface apps](./cpp_cli/)
+  - [C++ unreal engine](./cpp_unreal_engine/)
   ---
-  - [C# algorithms](./c#_algorithms/)
-  - [C# command line interface apps](./c#_cli/)
+  - [C# algorithms](./cs_algorithms/)
+  - [C# command line interface apps](./cs_cli/)
   - [C# unity](./unity/)
-  - [C# .net](./dotnet/)
+  - [C# .net](./cs_dotnet/)
   ---
 - [Learning C Family](#learning-c-family)
   - [Learning C](./learning_c/)
   - [Learning C++](./learning_c++/)
-  - [Learning C#](./learning_c_sharp/)
+  - [Learning C#](./learning_cs/)
 - [Resources](#resources)
 
 ## Overview C Family
@@ -60,7 +60,7 @@ Mobile, Desktop and Game development.
 
 ## Learning C Family
 
-In order to learn C/C++/C# you will need an IDE like VSC, Code::Blocks or
+In order to write C/C++/C# you will need an IDE like VSC, Code::Blocks or
 Eclipse. For C/C++ you will also need a compiler like `gcc` or `clang`.
 Microsoft has really good extensions for IntelliSense, debugging, and code
 browsing which you can install in VSC or if you like a simpler approach use
@@ -86,7 +86,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 sudo apt install -y dotnet-sdk-8.0
 
 # on MacOS
-brew install dotnet
+brew install dotnet-sdk --cask
 ```
 
 ## Resources
@@ -109,7 +109,11 @@ brew install dotnet
 
 ---
 
+- [Head First C#](https://search.worldcat.org/title/1415977435)
 - [C# Brain Teasers](https://search.worldcat.org/title/1526838852)
 - [C# in Depth, 4th Edition](https://search.worldcat.org/title/1220984348)
 - [Code like a Pro in C#](https://search.worldcat.org/title/1269347368)
 - [Gray hat C#](https://search.worldcat.org/title/971333823)
+- ★★☆☆☆ [(Udemy) C# Basics for Beginners](https://www.udemy.com/csharp-tutorial-for-beginners/)
+- ★★★☆☆ [(Udemy) C# Intermediate](https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/)
+- ★★★☆☆ [(Udemy) C# Advanced Topics](https://www.udemy.com/csharp-advanced/)
