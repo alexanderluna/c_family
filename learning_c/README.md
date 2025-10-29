@@ -1,5 +1,14 @@
 # Learning C
 
+- [Basic Syntax](#basic-syntax)
+  - [Control Statements](#control-statements)
+  - [Looping](#looping)
+  - [Functions](#functions)
+- [Memory and Pointers](#memory-and-pointers)
+  - [Array Variables](#array-variables)
+  - [Pointer Arithmetic](#pointer-arithmetic)
+  - [Constants](#constants)
+
 ## Basic Syntax
 
 C is designed to create small, fast and lower level code which means it's closer
@@ -48,6 +57,8 @@ Why did we use a character array to store then name instead of a string ? In C,
 Strings are just character arrays but with a sentinel character, which is an
 additional character at the end of the string `\0` (Null character).
 
+### Control Statements
+
 You can control the flow of your program with control statements like `if/else`
 or `switch` statements:
 
@@ -75,6 +86,8 @@ switch(card) {
 }
 ```
 
+### Looping
+
 If you want to run code over and over you can use a loop statement like a
 `while` or `for` loop:
 
@@ -94,6 +107,8 @@ for (counter = 1; counter < 10; counter++) {
 
 > use a `break` statement to skip out of the loop and a `continue` statement to
 > skip the rest of the loop and go back to the start of the loop.
+
+### Functions
 
 A function in C can return a value or nothing but you always have to specify
 the return value type and the argument types. In fact, almost anything has a
